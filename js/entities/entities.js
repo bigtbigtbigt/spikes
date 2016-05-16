@@ -10,7 +10,7 @@ game.PlayerEntity = me.Entity.extend({
     this._super(me.Entity, 'init', [x, y, settings]);
 
     // set the default horizontal & vertical speed (accel vector)
-    this.body.setVelocity(3, 15);
+    this.body.setVelocity(4, 15);
 
     // set the display to follow our position on both axis
     me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
@@ -65,7 +65,8 @@ game.PlayerEntity = me.Entity.extend({
 
     if (me.input.isKeyPressed('jump')) {
       // make sure we are not already jumping or falling
-      if (!this.body.jumping && !this.body.falling) {
+      if (!this.body.jumping) {
+      //if (!this.body.jumping && !this.body.falling) {
         // set current vel to the maximum defined value
         // gravity will then do the rest
         this.body.vel.y = -this.body.maxVel.y * me.timer.tick;
