@@ -20,7 +20,7 @@ game.HUD.Container = me.Container.extend({
         // give a name
         this.name = "HUD";
 
-        // add our child score object at the top left corner
+        // add our child score object at the bottom right corner
         this.addChild(new game.HUD.ScoreItem(5, 5));
     }
 });
@@ -39,6 +39,14 @@ game.HUD.ScoreItem = me.Renderable.extend({
         // (size does not matter here)
         this._super(me.Renderable, 'init', [x, y, 10, 10]);
 
+        this.font = new me.BitmapFont(
+            me.loader.getBinary("PressStart2P"),
+            me.loader.getImage("PressStart2P"),
+            0.7,
+            "right",
+            "bottom"
+        );
+
         // local copy of the global score
         this.score = -1;
     },
@@ -51,6 +59,7 @@ game.HUD.ScoreItem = me.Renderable.extend({
         // return true if the score has been updated
         if (this.score !== game.data.score) {
             this.score = game.data.score;
+            console.log("The score is " + this.score);
             return true;
         }
         return false;
@@ -59,8 +68,9 @@ game.HUD.ScoreItem = me.Renderable.extend({
     /**
      * draw the score
      */
-    draw : function (context) {
+    draw : function (renderer) {
         // draw it baby !
+      this.font.draw (renderer, game.data.score, 600, 50);
     }
 
 });
