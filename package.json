@@ -14,5 +14,8 @@
     "grunt-download-electron": "^2.1.2",
     "grunt-processhtml": "^0.3.8",
     "grunt-replace": "^0.11.0"
+  },
+  "dependencies": {
+    "asar": "^0.14.3"
   }
 }

@@ -6,7 +6,7 @@ game.PlayScreen = me.ScreenObject.extend({
 
         // load a level
         // me.levelDirector.loadLevel("spikes-practice");
-        me.levelDirector.loadLevel("spikes-level-1");
+        me.levelDirector.loadLevel("spikes-level-2");
 
         // reset the score
         game.data.score = 0;

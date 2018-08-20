@@ -24,7 +24,7 @@
   <object id="24" name="spike" x="164.787" y="353.455">
    <polygon points="0,0 11.4545,-22.9091 24.3636,0.181818 0,0.181818 0,0.545455"/>
   </object>
-  <object id="25" name="spike2" x="387.806" y="353.834">
+  <object id="25" name="spike" x="387.806" y="353.834">
    <polygon points="0,0 11.0297,-22.5007 23.8242,-0.441189"/>
   </object>
  </objectgroup>
