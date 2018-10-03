@@ -65,11 +65,6 @@ game.resources = [
         "src": "data/img/sprite/wheelie_right.png"
     },
     {
-        "name": "spikes-level-tutorial",
-        "type": "tmx",
-        "src": "data/map/spikes-level-tutorial.tmx"
-    },
-    {
         "name": "spikes-level-1",
         "type": "tmx",
         "src": "data/map/spikes-level-1.tmx"
@@ -83,5 +78,10 @@ game.resources = [
         "name": "spikes-level-3",
         "type": "tmx",
         "src": "data/map/spikes-level-3.tmx"
+    },
+    {
+        "name": "spikes-level-tutorial",
+        "type": "tmx",
+        "src": "data/map/spikes-level-tutorial.tmx"
     }
 ];
